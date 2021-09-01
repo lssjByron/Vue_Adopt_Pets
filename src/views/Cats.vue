@@ -1,7 +1,8 @@
 <template>
-    <div>
-        <b-table striped hover :items="items"/>
-    </div>
+  <div>
+    <h1>Cats for Adoption</h1>
+    <b-table striped hover :items="cats" />
+  </div>
 </template>
 
 <script>
@@ -10,14 +11,12 @@
 import cats from '@/data/cats'
 
 export default {
-    data() {
-        return {
-        items: [
-            // cats is equivlant to cats: cats (where the first 'cats' is the variable 
-            // we're declaring and the second cats value is imported cats array)
-            cats
-        ]
-        }
+  data () {
+    return {
+      // cats is equivlant to cats: cats (where the first 'cats' is the variable
+      // we're declaring and the second cats value is imported cats array)
+      cats
     }
+  }
 }
 </script>
